@@ -1,8 +1,7 @@
 from django.db import models
 from django.contrib.auth.models import AbstractUser
 from phonenumber_field.modelfields import PhoneNumberField
-#from .models import CustomUserManager
-
+from .managers import CustomUserManager
 
 
 class User(AbstractUser):
@@ -10,12 +9,12 @@ class User(AbstractUser):
         ('male', 'male'),
         ('female', 'female'),
         ('transgender', 'transgender')
-    ]
+    ] 
     ROLE_CHOICES = [
         ('customer', 'customer'),
         ('loan_representative', 'loan representative'),
         ('operational_head', 'operational_head'),
-        ('loan sanctioning officer', 'loan_sanctioning_officer'), 
+        ('loan_sanctioning_officer', 'loan_sanctioning_officer'), 
         ('admin', 'admin'),
         ('account_head', 'account_head'),
     ]
@@ -32,9 +31,9 @@ class User(AbstractUser):
     is_active = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ('first name', 'last name', 'mobile')
+    REQUIRED_FIELDS = ('first_name', 'last_name', 'mobile')
 
-    #objects = CustomUserManager()
+    objects = CustomUserManager()
 
     class Meta:
         verbose_name ='User'
