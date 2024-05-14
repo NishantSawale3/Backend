@@ -39,7 +39,7 @@ class Application(models.Model):
     remark = models.CharField(max_length=250, default=0, blank=True)
     credit_score = models.IntegerField(blank=True, null=True)
 
-    def str(self):
+    def __str__(self):
         return f"{self.id}"
 
 class Guarantor(models.Model):

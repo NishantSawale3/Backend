@@ -1,9 +1,28 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser
+from django.contrib.auth.models import AbstractUser, BaseUserManager
 from phonenumber_field.modelfields import PhoneNumberField
 #from .models import CustomUserManager
 
+class CustomUserManager(BaseUserManager):
+    def create_user(self, email, first_name, last_name, mobile, password=None, **extra_fields):
+        if not email:
+            raise ValueError('The Email field must be set')
+        email = self.normalize_email(email)
+        user = self.model(email=email, first_name=first_name, last_name=last_name, mobile=mobile, **extra_fields)
+        user.set_password(password)
+        user.save(using=self._db)
+        return user
 
+    def create_superuser(self, email, first_name, last_name, mobile, password=None, **extra_fields):
+        extra_fields.setdefault('is_staff', True)
+        extra_fields.setdefault('is_superuser', True)
+        
+        if extra_fields.get('is_staff') is not True:
+            raise ValueError('Superuser must have is_staff=True.')
+        if extra_fields.get('is_superuser') is not True:
+            raise ValueError('Superuser must have is_superuser=True.')
+
+        return self.create_user(email, first_name, last_name, mobile, password, **extra_fields)
 
 class User(AbstractUser):
     GENDER_CHOICES = [
@@ -32,9 +51,9 @@ class User(AbstractUser):
     is_active = models.BooleanField(default=False)
 
     USERNAME_FIELD = 'email'
-    REQUIRED_FIELDS = ('first name', 'last name', 'mobile')
+    REQUIRED_FIELDS = ('first_name', 'last_name', 'mobile')
 
-    #objects = CustomUserManager()
+    objects = CustomUserManager()
 
     class Meta:
         verbose_name ='User'

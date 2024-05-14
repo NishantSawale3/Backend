@@ -1,0 +1,63 @@
+ERROR 2024-04-08 14:26:01,866 views error_logger Error saving the user data {'password': [ErrorDetail(string='This field is required.', code='required')], 'gender': [ErrorDetail(string='This field is required.', code='required')], 'email': [ErrorDetail(string='This field is required.', code='required')]}
+ERROR 2024-04-09 03:51:30,163 views error_logger Error saving the user data {}
+ERROR 2024-04-09 04:03:28,466 views error_logger Error saving the user data {}
+ERROR 2024-04-09 04:31:20,295 views error_logger Error saving the user data {}
+ERROR 2024-04-09 04:35:19,096 views error_logger Error saving the user data {}
+ERROR 2024-04-09 04:38:54,928 views error_logger Error saving the user data {}
+ERROR 2024-04-09 18:26:01,986 views error_logger Error saving the user data {}
+ERROR 2024-04-09 18:35:48,115 views error_logger Error saving the user data {}
+ERROR 2024-04-09 18:38:54,437 views error_logger Error saving the user data {'email': [ErrorDetail(string='User with this email already exists.', code='unique')]}
+ERROR 2024-04-09 18:39:50,296 views error_logger Error saving the user data {}
+ERROR 2024-04-09 18:43:00,048 views error_logger Error saving the user data {}
+ERROR 2024-04-09 19:17:02,775 views error_logger Error saving the user data {'email': [ErrorDetail(string='User with this email already exists.', code='unique')]}
+ERROR 2024-04-09 19:18:49,875 views error_logger Error saving the user data {}
+ERROR 2024-04-09 19:51:49,106 views error_logger Error saving the user data {'email': [ErrorDetail(string='User with this email already exists.', code='unique')]}
+ERROR 2024-04-12 00:42:16,502 views error_logger Error saving the user data {'email': [ErrorDetail(string='Email must end with @example.com', code='invalid')], 'password': [ErrorDetail(string='This field is required.', code='required')]}
+ERROR 2024-04-12 00:55:29,409 views error_logger Error saving the user data {'email': [ErrorDetail(string='Email must end with @example.com', code='invalid')]}
+ERROR 2024-04-12 01:02:34,132 views error_logger Error saving the user data {'email': [ErrorDetail(string='Email must conatain @ and ends with ', code='invalid')]}
+ERROR 2024-04-12 01:08:23,416 views error_logger Error saving the user data {}
+ERROR 2024-04-12 01:11:10,032 views error_logger Error saving the user data {'mobile': [ErrorDetail(string='This mobile number is already in use.', code='invalid')]}
+ERROR 2024-04-12 01:11:48,037 views error_logger Error saving the user data {}
+ERROR 2024-04-12 01:13:02,368 views error_logger Error saving the user data {}
+ERROR 2024-04-12 01:14:07,078 views error_logger Error saving the user data {}
+ERROR 2024-04-12 01:21:37,835 views error_logger Error saving the user data {}
+ERROR 2024-04-12 01:24:15,716 views error_logger Error saving the user data {'email': [ErrorDetail(string='User with this email already exists.', code='unique')], 'mobile': [ErrorDetail(string='This mobile number is already in use.', code='invalid')], 'gender': [ErrorDetail(string='"malee" is not a valid choice.', code='invalid_choice')]}
+ERROR 2024-04-12 01:24:42,349 views error_logger Error saving the user data {'gender': [ErrorDetail(string='"malee" is not a valid choice.', code='invalid_choice')]}
+ERROR 2024-04-12 01:25:37,786 views error_logger Error saving the user data {'mobile': [ErrorDetail(string='The phone number entered is not valid.', code='invalid_phone_number')]}
+ERROR 2024-04-12 01:26:06,493 views error_logger Error saving the user data {}
+ERROR 2024-04-12 01:30:56,005 views error_logger Error saving the user data {}
+ERROR 2024-04-12 01:31:09,026 views error_logger Error saving the user data {'email': [ErrorDetail(string='User with this email already exists.', code='unique')]}
+ERROR 2024-04-12 01:31:27,367 views error_logger Error saving the user data {}
+ERROR 2024-04-12 10:35:09,868 views error_logger Error saving the user data {}
+ERROR 2024-04-12 10:38:30,161 views error_logger Error saving the user data {}
+ERROR 2024-04-12 14:36:12,095 views error_logger Error saving the user data {'mobile': [ErrorDetail(string='The phone number entered is not valid.', code='invalid_phone_number')]}
+ERROR 2024-04-12 14:40:06,994 views error_logger Error saving the user data {'mobile': [ErrorDetail(string='The phone number entered is not valid.', code='invalid_phone_number')]}
+ERROR 2024-04-12 14:41:20,662 views error_logger Error saving the user data {'mobile': [ErrorDetail(string='Invalid mobile number format.', code='invalid')]}
+ERROR 2024-04-12 14:42:25,486 views error_logger Error saving the user data {'mobile': [ErrorDetail(string='Invalid mobile number format.', code='invalid')]}
+ERROR 2024-04-12 14:44:05,703 views error_logger Error saving the user data {}
+ERROR 2024-04-12 14:47:25,474 views error_logger Error saving the user data {}
+ERROR 2024-04-12 14:48:47,605 views error_logger Error saving the user data {}
+ERROR 2024-04-13 08:59:48,904 views error_logger Error saving the user data {'mobile': [ErrorDetail(string='Mobile number already exists.', code='invalid')]}
+ERROR 2024-04-18 00:52:01,276 utils error_logger Error generating PDF: unsupported operand type(s) for /: 'str' and 'int'
+ERROR 2024-04-18 00:52:01,277 views error_logger Error processing loan sanction request: unsupported operand type(s) for /: 'str' and 'int'
+ERROR 2024-04-18 00:56:27,479 utils error_logger Error generating PDF: unsupported operand type(s) for /: 'str' and 'int'
+ERROR 2024-04-18 00:56:27,479 views error_logger Error processing loan sanction request: unsupported operand type(s) for /: 'str' and 'int'
+ERROR 2024-04-18 00:58:04,319 utils error_logger Error generating PDF: unsupported operand type(s) for /: 'str' and 'int'
+ERROR 2024-04-18 00:58:04,319 views error_logger Error processing loan sanction request: unsupported operand type(s) for /: 'str' and 'int'
+ERROR 2024-04-18 00:59:55,074 utils error_logger Error generating PDF: unsupported operand type(s) for /: 'str' and 'int'
+ERROR 2024-04-18 00:59:55,074 views error_logger Error processing loan sanction request: unsupported operand type(s) for /: 'str' and 'int'
+ERROR 2024-04-18 01:05:12,129 utils error_logger Error generating PDF: too many values to unpack (expected 2)
+ERROR 2024-04-18 01:05:12,131 views error_logger Error processing loan sanction request: too many values to unpack (expected 2)
+ERROR 2024-04-18 01:09:22,327 utils error_logger Error generating PDF: too many values to unpack (expected 2)
+ERROR 2024-04-18 01:09:22,328 views error_logger Error processing loan sanction request: too many values to unpack (expected 2)
+ERROR 2024-04-18 01:10:54,592 views error_logger Error processing loan sanction request: too many values to unpack (expected 2)
+ERROR 2024-04-18 01:18:01,587 views error_logger Error processing loan sanction request: "to" argument must be a list or tuple
+ERROR 2024-04-19 01:32:53,095 views error_logger Error processing loan application: Loan() got unexpected keyword arguments: 'maturity_date'
+ERROR 2024-04-19 01:37:39,903 views error_logger Error processing loan application: Loan() got unexpected keyword arguments: 'maturity_date'
+ERROR 2024-04-19 01:40:51,409 views error_logger Error processing loan application: Loan() got unexpected keyword arguments: 'maturity_date'
+ERROR 2024-04-19 01:45:40,504 views error_logger Error processing loan application: Loan() got unexpected keyword arguments: 'nonlocalaturity_date'
+ERROR 2024-04-19 01:46:23,739 views error_logger Error processing loan application: (1048, "Column 'application_id' cannot be null")
+ERROR 2024-04-19 01:57:07,078 views error_logger Error processing loan application: (1048, "Column 'application_id' cannot be null")
+ERROR 2024-04-19 02:04:35,732 views error_logger Error processing loan application: (1048, "Column 'application_id' cannot be null")
+ERROR 2024-04-19 02:15:54,574 views error_logger Error processing loan application: Cannot assign "2": "Loan.application" must be a "Application" instance.
+ERROR 2024-04-19 02:16:44,053 views error_logger Error processing loan application: [Errno 2] No such file or directory: '/Users/kundansharma/Desktop/Startupsprint/Backend/startupsprint/media/loan_sanction_letter.pdf'
