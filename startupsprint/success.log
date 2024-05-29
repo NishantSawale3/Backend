@@ -1,0 +1,43 @@
+INFO 2024-04-09 18:35:48,102 views success_logger User created with email kundan221195@gmail.com
+INFO 2024-04-09 18:39:50,286 views success_logger User created with email user2@gmail.com
+INFO 2024-04-09 18:43:00,036 views success_logger User created with email user3@gmail.com
+INFO 2024-04-09 19:18:49,864 views success_logger User created with email user4@gmail.com
+INFO 2024-04-09 19:27:20,297 views success_logger User created with email user5@gmail.com
+INFO 2024-04-09 19:52:33,127 views success_logger User created with email avnish97090@gmail.com
+INFO 2024-04-09 19:59:43,903 views success_logger User created with email sapnakhandelwal450@gmail.com
+INFO 2024-04-09 20:03:42,354 views success_logger User created with email gaurav.chouksey27@gmail.com
+INFO 2024-04-09 20:06:08,132 views success_logger User created with email ysfarooqui@gmail.com
+INFO 2024-04-09 20:28:01,253 views success_logger Users Fetched Successfully
+INFO 2024-04-09 20:32:15,707 views success_logger Users Fetched Successfully
+INFO 2024-04-09 20:32:49,869 views success_logger User details fetched successfully
+INFO 2024-04-09 20:33:08,981 views success_logger User details fetched successfully
+INFO 2024-04-09 20:34:41,444 views success_logger User None updated successfully
+INFO 2024-04-09 20:35:15,255 views success_logger Users Fetched Successfully
+INFO 2024-04-10 08:55:53,418 views success_logger Users Fetched Successfully
+INFO 2024-04-12 14:48:40,907 views success_logger User created with email kundan246662@gmail.com
+INFO 2024-04-12 14:53:15,383 views success_logger User created with email kunda9246662@gmail.com
+INFO 2024-04-12 14:53:57,598 views success_logger User created with email kkk8@gmail.com
+INFO 2024-04-12 23:02:55,475 views success_logger Users Fetched Successfully
+INFO 2024-04-12 23:04:54,132 views success_logger Users Fetched Successfully
+INFO 2024-04-12 23:05:08,710 views success_logger Users Fetched Successfully
+INFO 2024-04-13 09:00:24,051 views success_logger User created with email admin@gmail.com
+INFO 2024-04-13 12:16:55,423 views success_logger User created with email shyam@gmail.com
+INFO 2024-04-14 16:27:17,237 views success_logger User created with email gaurav@gmail.com
+INFO 2024-04-18 01:18:01,585 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-18 01:19:47,371 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-18 14:08:41,859 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-18 14:20:58,420 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-19 01:32:53,093 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-19 01:37:39,902 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-19 01:40:51,407 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-19 01:45:40,504 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-19 01:46:23,730 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-19 01:57:07,076 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-19 02:04:35,727 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-19 02:15:54,573 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-19 02:16:44,042 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-19 02:27:52,243 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-19 02:30:26,682 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-19 02:41:03,876 utils success_logger PDF generated successfully: loan_sanction_letter.pdf
+INFO 2024-04-19 03:04:42,375 utils success_logger PDF generated successfully: loan_sanction_letter_6.pdf
+INFO 2024-04-19 03:09:10,523 utils success_logger PDF generated successfully: loan_sanction_letter_7.pdf

@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 from dotenv import load_dotenv
+from datetime import timedelta
 import os
 load_dotenv()
 
@@ -40,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'corsheaders',
     "accounts",
     "application_generation",
     "customer",
@@ -47,13 +49,15 @@ INSTALLED_APPS = [
     "feedback_and_queries",
     "loan_sanctioning",
     "reports",
-    "rest_framework"
+    "rest_framework",
+    'rest_framework_simplejwt'
 ]
 
 AUTH_USER_MODEL = "accounts.User"
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -122,7 +126,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Kolkata'
 
 USE_I18N = True
 
@@ -142,3 +146,87 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 MEDIA_URL = 'media/'
 
 MEDIA_ROOT = 'media'
+
+CORS_ALLOW_ALL_ORIGINS = True
+
+
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "verbose": {
+            "format": "{levelname} {asctime} {module} {name} {message}",
+            "style": "{",
+        },
+    },
+    "handlers": {
+        "error_handler": {
+            "class": "logging.FileHandler",
+            "filename": "error.log",
+            "formatter": "verbose",
+            "level": "ERROR",  
+        },
+        "success_handler": {
+            "class": "logging.FileHandler",
+            "filename": "success.log",
+            "formatter": "verbose",
+            "level": "INFO",  
+        },
+        "console": {
+            "class": "logging.StreamHandler",
+            "formatter": "verbose",
+            "level": "DEBUG",  
+        },
+    },
+    "loggers": {
+        "error_logger": {
+            "handlers": ["error_handler", "console"],
+            "level": "ERROR",
+            "propagate": False,
+        },
+        "success_logger": {
+            "handlers": ["success_handler", "console"],
+            "level": "INFO",
+            "propagate": True,
+        },
+    },
+}
+
+
+
+from datetime import timedelta
+
+SIMPLE_JWT = {
+    'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
+    'AUTH_HEADER_TYPES': ('Bearer', 'JWT'),
+}
+
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')
+
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend', 
+    'accounts.authentication.MobileNumberBackend',
+     
+]
+# CELERY STUFF
+
+CELERY_BROKER_URL = 'redis://localhost:6379/0'
+CELERY_BEAT_SCHEDULE = {
+    'send_birthday_emails': {
+        'task': 'accounts.tasks.send_birthday_emails',
+        'schedule': timedelta(days=1),  # Run daily
+    },
+    'send-emi-reminder-emails': {
+        'task': 'disburstment.tasks.send_emi_reminder_emails',
+        'schedule': timedelta(days=1),  
+    },
+    # Add more tasks here
+}
+
